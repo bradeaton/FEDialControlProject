@@ -122,14 +122,9 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQK-6l-Q1T">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="ACC-G5-SI2"/>
+                                    <constraint firstAttribute="height" constant="21" id="NpM-8q-8zf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Dial to Position:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1x-wA-srm">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -151,13 +146,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nQV-Hu-7JJ" firstAttribute="leading" secondItem="4jC-6p-r1m" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9uY-VE-TQu"/>
-                            <constraint firstItem="LQK-6l-Q1T" firstAttribute="centerX" secondItem="nQV-Hu-7JJ" secondAttribute="centerX" type="default" id="CI3-d1-wzw"/>
-                            <constraint firstItem="nQV-Hu-7JJ" firstAttribute="top" secondItem="i1x-wA-srm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Fd1-K5-n9b"/>
-                            <constraint firstAttribute="bottom" secondItem="nQV-Hu-7JJ" secondAttribute="bottom" constant="50" id="Ss8-xa-tau"/>
-                            <constraint firstAttribute="trailing" secondItem="nQV-Hu-7JJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bGH-KE-yRC"/>
-                            <constraint firstAttribute="bottom" secondItem="LQK-6l-Q1T" secondAttribute="bottom" constant="154" id="ewZ-NL-MWJ"/>
-                            <constraint firstItem="i1x-wA-srm" firstAttribute="leading" secondItem="4jC-6p-r1m" secondAttribute="leading" constant="29" id="zFv-Ml-eO4"/>
+                            <constraint firstAttribute="trailing" secondItem="LQK-6l-Q1T" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8No-an-gW7"/>
+                            <constraint firstItem="nQV-Hu-7JJ" firstAttribute="leading" secondItem="4jC-6p-r1m" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Eys-Cf-B3j"/>
+                            <constraint firstItem="nQV-Hu-7JJ" firstAttribute="top" secondItem="LQK-6l-Q1T" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="b2O-Fd-lp3"/>
+                            <constraint firstAttribute="bottom" secondItem="nQV-Hu-7JJ" secondAttribute="bottom" constant="16" id="hyh-gs-XwZ"/>
+                            <constraint firstAttribute="trailing" secondItem="nQV-Hu-7JJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iR2-UA-40k"/>
+                            <constraint firstItem="LQK-6l-Q1T" firstAttribute="leading" secondItem="4jC-6p-r1m" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sTJ-EN-gSe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Standard Dial" id="ozB-PQ-oPm"/>
@@ -169,27 +163,52 @@
             </objects>
             <point key="canvasLocation" x="945" y="-531"/>
         </scene>
-        <!--View Controller-->
+        <!--Rotating Indicator Dial View Controller - Rotating Indicator-->
         <scene sceneID="lPg-MY-urA">
             <objects>
-                <viewController id="luo-8A-Wtz" sceneMemberID="viewController">
+                <viewController id="luo-8A-Wtz" customClass="RotatingIndicatorDialViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6pz-8k-LUw">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rotating Indicator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enO-jX-U8h">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5i-MH-b9d">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="me5-fp-uLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HV3-nC-mst">
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setDialToPosition:" destination="luo-8A-Wtz" eventType="valueChanged" id="Pvh-QF-oJ9"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="enO-jX-U8h" firstAttribute="centerX" secondItem="6pz-8k-LUw" secondAttribute="centerX" type="default" id="Fen-5k-U1X"/>
-                            <constraint firstItem="enO-jX-U8h" firstAttribute="top" secondItem="6pz-8k-LUw" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ip0-vC-gjQ"/>
+                            <constraint firstAttribute="trailing" secondItem="O5i-MH-b9d" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9nM-wE-3H6"/>
+                            <constraint firstAttribute="bottom" secondItem="HV3-nC-mst" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="LOc-zV-4PW"/>
+                            <constraint firstAttribute="trailing" secondItem="HV3-nC-mst" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Lt1-Vh-XmI"/>
+                            <constraint firstItem="HV3-nC-mst" firstAttribute="leading" secondItem="6pz-8k-LUw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="YfY-vj-sp8"/>
+                            <constraint firstItem="HV3-nC-mst" firstAttribute="top" secondItem="O5i-MH-b9d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="brJ-mb-qDz"/>
+                            <constraint firstItem="O5i-MH-b9d" firstAttribute="leading" secondItem="6pz-8k-LUw" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ogk-cj-ZaT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5Ry-Sw-oTS"/>
+                    <navigationItem key="navigationItem" title="Rotating Indicator" id="5Ry-Sw-oTS"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="O5i-MH-b9d" id="STo-Rz-rdy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWn-fR-CcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,6 +247,13 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RotatingIndicatorDialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RotatingIndicatorDialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setDialToPosition:"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="StandardDialViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StandardDialViewController.h"/>

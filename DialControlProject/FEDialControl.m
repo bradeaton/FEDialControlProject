@@ -19,6 +19,7 @@
 - (void)setHomePosition:(FEDialControlHomePosition)home forView:(UIView *)view;
 - (UIImageView *)getSectionByValue:(int)value;
 - (NSInteger)positionForCurrentSection;
+- (NSInteger)translatedDialPositionForSection:(NSInteger)value;
 - (void)setSelectedImageForSection:(int)value;
 - (void)buttonPressed;
 
@@ -334,7 +335,7 @@
     CGFloat radians = atan2f(rotatingView.transform.b, rotatingView.transform.a);
     
     // Grab the sector object of the specified section
-    FEDialControlSection *s = [sections objectAtIndex:value];
+    FEDialControlSection *s = [sections objectAtIndex:[self translatedDialPositionForSection:value]];
     
     // Find the difference between the two angles
     CGFloat newVal = 0.0;
@@ -381,6 +382,22 @@
     return pos;
 }
 
+-(NSInteger)translatedDialPositionForSection:(NSInteger)value {
+
+    NSInteger pos;
+    
+    if (self.rotationalComponent == FEDialControlRotatingComponentDial) {
+        pos = value;
+    } else {
+        if (value > 0)
+            pos =  numberOfSections - value;
+        else
+            pos = 0;
+    }
+    return pos;
+
+}
+
 //
 //  Based on the specified homePosition, set the anchor point of the section view.
 //  Basically think of it like this: If our home position (or marker) is at the top
@@ -408,17 +425,19 @@
 - (void)setSelectedImageForSection:(int)value {
     FEDialControlSection *s;
     
-    // Hide all selected versions of the images
-    for (s in self.sections) {
-        s.view.hidden = NO;
-        s.selectedView.hidden = YES;
-    }
-        
-    if (value > -1) {
-        // Swap the images for the specified section
-        s = [self.sections objectAtIndex:value];
-        s.view.hidden = YES;
-        s.selectedView.hidden = NO;
+    if (s.selectedView) {
+        // Hide all selected versions of the images
+        for (s in self.sections) {
+            s.view.hidden = NO;
+            s.selectedView.hidden = YES;
+        }
+            
+        if (value > -1) {
+            // Swap the images for the specified section
+            s = [self.sections objectAtIndex:value];
+            s.view.hidden = YES;
+            s.selectedView.hidden = NO;
+        }
     }
 }
 
@@ -426,7 +445,7 @@
 // This is the target of the center button (if enabled).  We just notify the delegate of a button press event.
 - (void)buttonPressed {
     if ([self.delegate respondsToSelector:@selector(dialControl:buttonPressedForSection:)]) {
-        [self.delegate dialControl:self buttonPressedForSection:currentSection];
+        [self.delegate dialControl:self buttonPressedForSection:[self positionForCurrentSection]];
     }
 }
 

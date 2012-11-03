@@ -61,6 +61,11 @@
 		A2AB0D791644D5C60010271E /* SectionImageSelected8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D511644D5C60010271E /* SectionImageSelected8@2x.png */; };
 		A2AB0D7A1644D5C60010271E /* section_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D521644D5C60010271E /* section_marker.png */; };
 		A2AB0D7B1644D5C60010271E /* section_marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D531644D5C60010271E /* section_marker@2x.png */; };
+		A2AB0D7E16456BAA0010271E /* RotatingIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D7C16456BAA0010271E /* RotatingIndicator.png */; };
+		A2AB0D7F16456BAA0010271E /* RotatingIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D7D16456BAA0010271E /* RotatingIndicator@2x.png */; };
+		A2AB0D8316456CAB0010271E /* RotatingIndicatorDialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AB0D8216456CAB0010271E /* RotatingIndicatorDialViewController.m */; };
+		A2AB0D8616456FB90010271E /* RotatingIndicatorBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D8416456FB90010271E /* RotatingIndicatorBackground.png */; };
+		A2AB0D8716456FB90010271E /* RotatingIndicatorBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AB0D8516456FB90010271E /* RotatingIndicatorBackground@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +132,12 @@
 		A2AB0D511644D5C60010271E /* SectionImageSelected8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SectionImageSelected8@2x.png"; sourceTree = "<group>"; };
 		A2AB0D521644D5C60010271E /* section_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = section_marker.png; sourceTree = "<group>"; };
 		A2AB0D531644D5C60010271E /* section_marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "section_marker@2x.png"; sourceTree = "<group>"; };
+		A2AB0D7C16456BAA0010271E /* RotatingIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RotatingIndicator.png; sourceTree = "<group>"; };
+		A2AB0D7D16456BAA0010271E /* RotatingIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RotatingIndicator@2x.png"; sourceTree = "<group>"; };
+		A2AB0D8116456CAB0010271E /* RotatingIndicatorDialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingIndicatorDialViewController.h; sourceTree = "<group>"; };
+		A2AB0D8216456CAB0010271E /* RotatingIndicatorDialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingIndicatorDialViewController.m; sourceTree = "<group>"; };
+		A2AB0D8416456FB90010271E /* RotatingIndicatorBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RotatingIndicatorBackground.png; sourceTree = "<group>"; };
+		A2AB0D8516456FB90010271E /* RotatingIndicatorBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RotatingIndicatorBackground@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +192,10 @@
 				A2619C611644C8F000FA7815 /* MasterViewController.m */,
 				A2AB0D281644D5440010271E /* StandardDialViewController.h */,
 				A2AB0D291644D5440010271E /* StandardDialViewController.m */,
+				A2AB0D8116456CAB0010271E /* RotatingIndicatorDialViewController.h */,
+				A2AB0D8216456CAB0010271E /* RotatingIndicatorDialViewController.m */,
 				A2AB0D2B1644D5AA0010271E /* StandardDialGraphics */,
+				A2AB0D8016456BB30010271E /* RotatingIndicatorGraphics */,
 				A2619C4C1644C8F000FA7815 /* Supporting Files */,
 			);
 			path = DialControlProject;
@@ -259,6 +273,17 @@
 				A2AB0D531644D5C60010271E /* section_marker@2x.png */,
 			);
 			name = StandardDialGraphics;
+			sourceTree = "<group>";
+		};
+		A2AB0D8016456BB30010271E /* RotatingIndicatorGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB0D8416456FB90010271E /* RotatingIndicatorBackground.png */,
+				A2AB0D8516456FB90010271E /* RotatingIndicatorBackground@2x.png */,
+				A2AB0D7C16456BAA0010271E /* RotatingIndicator.png */,
+				A2AB0D7D16456BAA0010271E /* RotatingIndicator@2x.png */,
+			);
+			name = RotatingIndicatorGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +382,10 @@
 				A2AB0D791644D5C60010271E /* SectionImageSelected8@2x.png in Resources */,
 				A2AB0D7A1644D5C60010271E /* section_marker.png in Resources */,
 				A2AB0D7B1644D5C60010271E /* section_marker@2x.png in Resources */,
+				A2AB0D7E16456BAA0010271E /* RotatingIndicator.png in Resources */,
+				A2AB0D7F16456BAA0010271E /* RotatingIndicator@2x.png in Resources */,
+				A2AB0D8616456FB90010271E /* RotatingIndicatorBackground.png in Resources */,
+				A2AB0D8716456FB90010271E /* RotatingIndicatorBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +402,7 @@
 				A2AB0D261644C9F00010271E /* FEDialControl.m in Sources */,
 				A2AB0D271644C9F00010271E /* FEDialControlSection.m in Sources */,
 				A2AB0D2A1644D5440010271E /* StandardDialViewController.m in Sources */,
+				A2AB0D8316456CAB0010271E /* RotatingIndicatorDialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
