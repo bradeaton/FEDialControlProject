@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2619C461644C8F000FA7815 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2619C451644C8F000FA7815 /* UIKit.framework */; };
+		A2619C481644C8F000FA7815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2619C471644C8F000FA7815 /* Foundation.framework */; };
+		A2619C4A1644C8F000FA7815 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2619C491644C8F000FA7815 /* CoreGraphics.framework */; };
+		A2619C501644C8F000FA7815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2619C4E1644C8F000FA7815 /* InfoPlist.strings */; };
+		A2619C521644C8F000FA7815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2619C511644C8F000FA7815 /* main.m */; };
+		A2619C561644C8F000FA7815 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2619C551644C8F000FA7815 /* AppDelegate.m */; };
+		A2619C581644C8F000FA7815 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A2619C571644C8F000FA7815 /* Default.png */; };
+		A2619C5A1644C8F000FA7815 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2619C591644C8F000FA7815 /* Default@2x.png */; };
+		A2619C5C1644C8F000FA7815 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2619C5B1644C8F000FA7815 /* Default-568h@2x.png */; };
+		A2619C5F1644C8F000FA7815 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2619C5D1644C8F000FA7815 /* MainStoryboard.storyboard */; };
+		A2619C621644C8F000FA7815 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2619C611644C8F000FA7815 /* MasterViewController.m */; };
+		A2619C651644C8F000FA7815 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2619C641644C8F000FA7815 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2619C411644C8F000FA7815 /* DialControlProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialControlProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2619C451644C8F000FA7815 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2619C471644C8F000FA7815 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2619C491644C8F000FA7815 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2619C4D1644C8F000FA7815 /* DialControlProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DialControlProject-Info.plist"; sourceTree = "<group>"; };
+		A2619C4F1644C8F000FA7815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2619C511644C8F000FA7815 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2619C531644C8F000FA7815 /* DialControlProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DialControlProject-Prefix.pch"; sourceTree = "<group>"; };
+		A2619C541644C8F000FA7815 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2619C551644C8F000FA7815 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2619C571644C8F000FA7815 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A2619C591644C8F000FA7815 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A2619C5B1644C8F000FA7815 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A2619C5E1644C8F000FA7815 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A2619C601644C8F000FA7815 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		A2619C611644C8F000FA7815 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		A2619C631644C8F000FA7815 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A2619C641644C8F000FA7815 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2619C3E1644C8F000FA7815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2619C461644C8F000FA7815 /* UIKit.framework in Frameworks */,
+				A2619C481644C8F000FA7815 /* Foundation.framework in Frameworks */,
+				A2619C4A1644C8F000FA7815 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2619C361644C8F000FA7815 = {
+			isa = PBXGroup;
+			children = (
+				A2619C4B1644C8F000FA7815 /* DialControlProject */,
+				A2619C441644C8F000FA7815 /* Frameworks */,
+				A2619C421644C8F000FA7815 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2619C421644C8F000FA7815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2619C411644C8F000FA7815 /* DialControlProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2619C441644C8F000FA7815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2619C451644C8F000FA7815 /* UIKit.framework */,
+				A2619C471644C8F000FA7815 /* Foundation.framework */,
+				A2619C491644C8F000FA7815 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2619C4B1644C8F000FA7815 /* DialControlProject */ = {
+			isa = PBXGroup;
+			children = (
+				A2619C541644C8F000FA7815 /* AppDelegate.h */,
+				A2619C551644C8F000FA7815 /* AppDelegate.m */,
+				A2619C5D1644C8F000FA7815 /* MainStoryboard.storyboard */,
+				A2619C601644C8F000FA7815 /* MasterViewController.h */,
+				A2619C611644C8F000FA7815 /* MasterViewController.m */,
+				A2619C631644C8F000FA7815 /* DetailViewController.h */,
+				A2619C641644C8F000FA7815 /* DetailViewController.m */,
+				A2619C4C1644C8F000FA7815 /* Supporting Files */,
+			);
+			path = DialControlProject;
+			sourceTree = "<group>";
+		};
+		A2619C4C1644C8F000FA7815 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2619C4D1644C8F000FA7815 /* DialControlProject-Info.plist */,
+				A2619C4E1644C8F000FA7815 /* InfoPlist.strings */,
+				A2619C511644C8F000FA7815 /* main.m */,
+				A2619C531644C8F000FA7815 /* DialControlProject-Prefix.pch */,
+				A2619C571644C8F000FA7815 /* Default.png */,
+				A2619C591644C8F000FA7815 /* Default@2x.png */,
+				A2619C5B1644C8F000FA7815 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2619C401644C8F000FA7815 /* DialControlProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2619C681644C8F000FA7815 /* Build configuration list for PBXNativeTarget "DialControlProject" */;
+			buildPhases = (
+				A2619C3D1644C8F000FA7815 /* Sources */,
+				A2619C3E1644C8F000FA7815 /* Frameworks */,
+				A2619C3F1644C8F000FA7815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DialControlProject;
+			productName = DialControlProject;
+			productReference = A2619C411644C8F000FA7815 /* DialControlProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2619C381644C8F000FA7815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Brad Eaton";
+			};
+			buildConfigurationList = A2619C3B1644C8F000FA7815 /* Build configuration list for PBXProject "DialControlProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2619C361644C8F000FA7815;
+			productRefGroup = A2619C421644C8F000FA7815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2619C401644C8F000FA7815 /* DialControlProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2619C3F1644C8F000FA7815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2619C501644C8F000FA7815 /* InfoPlist.strings in Resources */,
+				A2619C581644C8F000FA7815 /* Default.png in Resources */,
+				A2619C5A1644C8F000FA7815 /* Default@2x.png in Resources */,
+				A2619C5C1644C8F000FA7815 /* Default-568h@2x.png in Resources */,
+				A2619C5F1644C8F000FA7815 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2619C3D1644C8F000FA7815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2619C521644C8F000FA7815 /* main.m in Sources */,
+				A2619C561644C8F000FA7815 /* AppDelegate.m in Sources */,
+				A2619C621644C8F000FA7815 /* MasterViewController.m in Sources */,
+				A2619C651644C8F000FA7815 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2619C4E1644C8F000FA7815 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2619C4F1644C8F000FA7815 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2619C5D1644C8F000FA7815 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2619C5E1644C8F000FA7815 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2619C661644C8F000FA7815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2619C671644C8F000FA7815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2619C691644C8F000FA7815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DialControlProject/DialControlProject-Prefix.pch";
+				INFOPLIST_FILE = "DialControlProject/DialControlProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2619C6A1644C8F000FA7815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DialControlProject/DialControlProject-Prefix.pch";
+				INFOPLIST_FILE = "DialControlProject/DialControlProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2619C3B1644C8F000FA7815 /* Build configuration list for PBXProject "DialControlProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2619C661644C8F000FA7815 /* Debug */,
+				A2619C671644C8F000FA7815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2619C681644C8F000FA7815 /* Build configuration list for PBXNativeTarget "DialControlProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2619C691644C8F000FA7815 /* Debug */,
+				A2619C6A1644C8F000FA7815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2619C381644C8F000FA7815 /* Project object */;
+}
