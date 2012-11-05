@@ -44,20 +44,20 @@
     [dialControl rotateDialToSection:[(UISegmentedControl *)sender selectedSegmentIndex]];
 }
 
-#pragma mark - RotaryWheel Delegate Methods
+#pragma mark - Delegate Methods
 
-// Notifies the delegate when the value of the wheel has changed.  Also fires initially.
+// Notifies the delegate when the value of the dial has changed.  Also fires initially.
 - (void)dialDidChangeValue:(NSInteger)newValue {
     self.statusLabel.text = [NSString stringWithFormat:@"dialDidChangeValue:%d",newValue];
 }
 
-// Obtains the number of sections in the wheel from the delegate
-- (NSInteger)numberOfSectionsInDial:(FEDialControl *)rotaryWheel {
+// Obtains the number of sections in the dial from the delegate
+- (NSInteger)numberOfSectionsInDial:(FEDialControl *)dialControl {
     return 8;
 }
 
 // Obtains the section image or icon for the specified section from the delegate
-- (UIImage *) dialControl:(FEDialControl *)rotaryWheel imageForSection:(NSInteger)section {
+- (UIImage *) dialControl:(FEDialControl *)dialControl imageForSection:(NSInteger)section {
     if (section == 0) {
         return [UIImage imageNamed:@"RotatingIndicator.png"];
     } else {
@@ -65,33 +65,23 @@
     }
 }
 
-//// Obtains the selected section image or icon for the specified section from the delegate
-//- (UIImage *) dialControl:(FEDialControl *)rotaryWheel imageForSelectedSection:(NSInteger)section {
-//    return [UIImage imageNamed:[NSString stringWithFormat:@"SectionImageSelected%d.png",section+1]];
-//}
-
-// Obtains the non-rotating interface image of the wheel (behind all other views)
-- (UIImage *) backgroundImageForDialControl:(FEDialControl *)rotaryWheel {
+// Obtains the non-rotating interface image of the dial (behind all other views)
+- (UIImage *) backgroundImageForDialControl:(FEDialControl *)dialControl {
     return [UIImage imageNamed:@"RotatingIndicatorBackground.png"];
 }
 
-//// Obtains the non-rotating interface image of the wheel (in font of all other views)
-//- (UIImage *)foregroundImageForDialControl:(FEDialControl *)rotaryWheel {
-//    return [UIImage imageNamed:@"section_marker.png"];
-//}
-
 // Obtains the button up image
-- (UIImage *)buttonImageForDialControl:(FEDialControl *)rotaryWheel {
+- (UIImage *)buttonImageForDialControl:(FEDialControl *)dialControl {
     return [UIImage imageNamed:@"CenterButtonUp.png"];
 }
 
 // Obtains the button down image
-- (UIImage *)buttonImageDepressedForDialControl:(FEDialControl *)rotaryWheel {
+- (UIImage *)buttonImageDepressedForDialControl:(FEDialControl *)dialControl {
     return [UIImage imageNamed:@"CenterButtonDown.png"];
 }
 
 // The button was pressed
--(void) dialControl:(FEDialControl *)rotaryWheel buttonPressedForSection:(NSInteger)section {
+-(void) dialControl:(FEDialControl *)dialControl buttonPressedForSection:(NSInteger)section {
     self.statusLabel.text = [NSString stringWithFormat:@"dialControl:buttonPressedForSection:%d", section];
 }
 

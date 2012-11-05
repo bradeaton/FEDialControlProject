@@ -1,6 +1,5 @@
 //
-//  SMSector.m
-//  RotaryWheelProject
+//  FEDialControlSection.m
 //
 //  Created by Brad Eaton on 10/21/12.
 //  Copyright (c) 2012 Brad Eaton. All rights reserved.
