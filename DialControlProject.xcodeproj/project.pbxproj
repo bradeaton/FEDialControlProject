@@ -138,6 +138,18 @@
 		A2AB0D8216456CAB0010271E /* RotatingIndicatorDialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingIndicatorDialViewController.m; sourceTree = "<group>"; };
 		A2AB0D8416456FB90010271E /* RotatingIndicatorBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RotatingIndicatorBackground.png; sourceTree = "<group>"; };
 		A2AB0D8516456FB90010271E /* RotatingIndicatorBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RotatingIndicatorBackground@2x.png"; sourceTree = "<group>"; };
+		A2C59AF31648D5EE00300B46 /* FEDialControl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = FEDialControl.html; sourceTree = "<group>"; };
+		A2C59AF41648D5EE00300B46 /* FEDialControlSection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = FEDialControlSection.html; sourceTree = "<group>"; };
+		A2C59AF61648D5EE00300B46 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		A2C59AF71648D5EE00300B46 /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		A2C59AF81648D5EE00300B46 /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = hierarchy.html; sourceTree = "<group>"; };
+		A2C59AFA1648D5EE00300B46 /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		A2C59AFB1648D5EE00300B46 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		A2C59AFC1648D5EE00300B46 /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		A2C59AFD1648D5EE00300B46 /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		A2C59AFE1648D5EE00300B46 /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		A2C59AFF1648D5EE00300B46 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
+		A2C59B011648D5EE00300B46 /* FEDialControlProtocol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = FEDialControlProtocol.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +172,7 @@
 				A2619C4B1644C8F000FA7815 /* DialControlProject */,
 				A2AB0D1F1644C9C50010271E /* DialControl */,
 				A2619C441644C8F000FA7815 /* Frameworks */,
+				A2C59AF01648D5EE00300B46 /* documentation */,
 				A2619C421644C8F000FA7815 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -286,6 +299,65 @@
 			name = RotatingIndicatorGraphics;
 			sourceTree = "<group>";
 		};
+		A2C59AF01648D5EE00300B46 /* documentation */ = {
+			isa = PBXGroup;
+			children = (
+				A2C59AF11648D5EE00300B46 /* html */,
+			);
+			path = documentation;
+			sourceTree = "<group>";
+		};
+		A2C59AF11648D5EE00300B46 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				A2C59AF21648D5EE00300B46 /* Classes */,
+				A2C59AF51648D5EE00300B46 /* css */,
+				A2C59AF81648D5EE00300B46 /* hierarchy.html */,
+				A2C59AF91648D5EE00300B46 /* img */,
+				A2C59AFF1648D5EE00300B46 /* index.html */,
+				A2C59B001648D5EE00300B46 /* Protocols */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		A2C59AF21648D5EE00300B46 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A2C59AF31648D5EE00300B46 /* FEDialControl.html */,
+				A2C59AF41648D5EE00300B46 /* FEDialControlSection.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A2C59AF51648D5EE00300B46 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				A2C59AF61648D5EE00300B46 /* styles.css */,
+				A2C59AF71648D5EE00300B46 /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		A2C59AF91648D5EE00300B46 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A2C59AFA1648D5EE00300B46 /* button_bar_background.png */,
+				A2C59AFB1648D5EE00300B46 /* disclosure.png */,
+				A2C59AFC1648D5EE00300B46 /* disclosure_open.png */,
+				A2C59AFD1648D5EE00300B46 /* library_background.png */,
+				A2C59AFE1648D5EE00300B46 /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		A2C59B001648D5EE00300B46 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A2C59B011648D5EE00300B46 /* FEDialControlProtocol.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,6 +368,7 @@
 				A2619C3D1644C8F000FA7815 /* Sources */,
 				A2619C3E1644C8F000FA7815 /* Frameworks */,
 				A2619C3F1644C8F000FA7815 /* Resources */,
+				A2C59AEF1648D28B00300B46 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -390,6 +463,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2C59AEF1648D28B00300B46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc --company-id com.bradeaton --project-company \"Brad Eaton\" --project-name \"DialControl\" --no-repeat-first-par --no-create-docset --create-html --logformat xcode --output ./documentation DialControlProject/FE*.h";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2619C3D1644C8F000FA7815 /* Sources */ = {
