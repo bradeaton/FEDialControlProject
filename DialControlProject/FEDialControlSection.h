@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-/** @discussion Represents a single section in the rotating dial of a FEDialControl object.
+/** Represents a single section in the rotating dial of a FEDialControl object.
  */
 @interface FEDialControlSection : NSObject
 

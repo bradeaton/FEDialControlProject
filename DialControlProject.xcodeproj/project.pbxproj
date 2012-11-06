@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2437B3216477F04004358B7 /* documentation in Resources */ = {isa = PBXBuildFile; fileRef = A2437B3116477F04004358B7 /* documentation */; };
 		A2619C461644C8F000FA7815 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2619C451644C8F000FA7815 /* UIKit.framework */; };
 		A2619C481644C8F000FA7815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2619C471644C8F000FA7815 /* Foundation.framework */; };
 		A2619C4A1644C8F000FA7815 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2619C491644C8F000FA7815 /* CoreGraphics.framework */; };
@@ -70,7 +69,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A2437B3116477F04004358B7 /* documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = documentation; sourceTree = "<group>"; };
 		A2619C411644C8F000FA7815 /* DialControlProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialControlProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2619C451644C8F000FA7815 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2619C471644C8F000FA7815 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,7 +160,6 @@
 				A2619C4B1644C8F000FA7815 /* DialControlProject */,
 				A2AB0D1F1644C9C50010271E /* DialControl */,
 				A2619C441644C8F000FA7815 /* Frameworks */,
-				A2437B3116477F04004358B7 /* documentation */,
 				A2619C421644C8F000FA7815 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -389,7 +386,6 @@
 				A2AB0D7F16456BAA0010271E /* RotatingIndicator@2x.png in Resources */,
 				A2AB0D8616456FB90010271E /* RotatingIndicatorBackground.png in Resources */,
 				A2AB0D8716456FB90010271E /* RotatingIndicatorBackground@2x.png in Resources */,
-				A2437B3216477F04004358B7 /* documentation in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

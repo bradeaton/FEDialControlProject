@@ -21,7 +21,7 @@ typedef enum _FEDialControlHomePosition {
     FEDialControlHomePositionRight = 3
 } FEDialControlHomePosition;
 
-/** @discussion Presents a rotating dial control allowing the user to make a selection by rotating the dial to the desired section.
+/** Presents a rotating dial control allowing the user to make a selection by rotating the dial to the desired section.
 
 Custom images are provided for each FEDialControlSection of the dial via a FEDialControlProtocol method.  The FEDialControlProtocol informs the delegate when the current dial selection has changed.  In addition, an optional center button may be configured.  The delegate is notified when the button is pressed and which FEDialControlSection was active at the time.
  */
@@ -53,7 +53,7 @@ Custom images are provided for each FEDialControlSection of the dial via a FEDia
 
 /** Sets or returns whether the dial or the indicator should rotate.
  
- @discussion This property allows the FEDialControl to be configured for either the dial face to rotate or an indicator to rotate.  It only affects how the currentSection number is calculated.
+ This property allows the FEDialControl to be configured for either the dial face to rotate or an indicator to rotate.  It only affects how the currentSection number is calculated.
  
  - FEDialControlRotatingComponentDial, This is the default value and indicates that the the images supplied by the dialControl:ImageForSection and dialControl:ImageForSelectedSection: methods of the FEDialControlProtocol will be used as the dial face which will rotate around the center of the FEDialControl.
  - FEDialControlRotatingComponentIndicator, This indicates that the graphics supplied to dialControl:ImageForSection and dialControl:ImageForSelectedSection: will be assumed to be markers or indicators rotating over the top of the background graphic which contains the actual section images.
@@ -69,7 +69,7 @@ Custom images are provided for each FEDialControlSection of the dial via a FEDia
 
 /** Defines the class responsible for implementing the delegate protocol. 
  
- @discussion Implementing this protocol is required.  Its methods obtain the number of sections in the grid and images used for the background, dial sections, foreground and center button.  In addition, methods also notify the delegate when the dial's selected section changes and when the center button has been tapped.
+ Implementing this protocol is required.  Its methods obtain the number of sections in the grid and images used for the background, dial sections, foreground and center button.  In addition, methods also notify the delegate when the dial's selected section changes and when the center button has been tapped.
  */
 @property (weak) id <FEDialControlProtocol> delegate;
 
@@ -85,7 +85,7 @@ Custom images are provided for each FEDialControlSection of the dial via a FEDia
 
 /** Array of FEDialControlSection objects.
  
- @discussion Provides access to the FEDialControlSection objects that contain the provided regular and selected UIView instances for each section of the dial.
+ Provides access to the FEDialControlSection objects that contain the provided regular and selected UIView instances for each section of the dial.
  */
 @property (nonatomic, strong) NSMutableArray *sections;
 
@@ -98,7 +98,7 @@ Custom images are provided for each FEDialControlSection of the dial via a FEDia
 
 /** UIButton control (if supplied) in the center of the dial.
  
- @discussion Returns or sets the UIButton control configured in the center of the dial.  This could be used to change the button graphics depending on the current section of the dial.
+ Returns or sets the UIButton control configured in the center of the dial.  This could be used to change the button graphics depending on the current section of the dial.
  */
 @property (nonatomic, strong) UIButton *centerButton;
 
