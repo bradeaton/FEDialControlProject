@@ -476,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc --company-id com.bradeaton --project-company \"Brad Eaton\" --project-name \"DialControl\" --no-repeat-first-par --no-create-docset --create-html --logformat xcode --output ./documentation DialControlProject/FE*.h";
+			shellScript = "/usr/local/bin/appledoc --company-id com.bradeaton --project-company \"Brad Eaton\" --project-name \"DialControl\" --no-repeat-first-par --no-create-docset --create-html --logformat xcode --exit-threshold 2 --output ./documentation DialControlProject/FE*.h";
 		};
 /* End PBXShellScriptBuildPhase section */
 
